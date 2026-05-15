@@ -4933,7 +4933,7 @@ footer {
 
   .slide-desc {
     font-size: 1rem !important;
-    margin-bottom: 1.5rem !important;
+    margin-bottom: .5rem !important;
     max-width: 100% !important;
   }
 
@@ -4976,6 +4976,14 @@ footer {
     width: 50% !important;
     padding: 1.2rem 0.8rem !important;
     border: 0.5px solid rgba(255, 255, 255, 0.05) !important;
+  }
+
+  .city-item:nth-child(5) {
+    width: 60% !important;
+  }
+
+  .hero-command-center {
+    bottom: 0%;
   }
 
   .item-name {
@@ -5162,16 +5170,24 @@ footer {
 
   .hero-slide-content {
     top: auto !important;
-    bottom: 62% !important;
+    bottom: 64% !important;
     left: 5% !important;
     transform: none !important;
     text-align: left;
     width: 90%;
   }
 
+  .command-center-title {
+    gap: .5rem;
+  }
+
+  .command-center-title::after {
+    width: 117px;
+  }
+
   .hero-slider-nav {
     top: auto !important;
-    bottom: 53% !important;
+    bottom: 58% !important;
     right: 5% !important;
     left: auto !important;
     transform: none !important;
