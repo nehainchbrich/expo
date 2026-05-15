@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const GENERIC_VIP = {
     dateBanner: "Select your expo city",
     subtitle:
-      "Both expos are 16–17 May 2026. Choose Perth (Australia) or Dubai (UAE) below — Dubai unlocks extra evening time slots."
+      "Both expos are on 16th–17th May 2026. Choose Perth (Australia) or Dubai (UAE) below & book your time slots."
   };
 
   const rebuildVipDateOptions = (dates) => {
@@ -928,7 +928,7 @@ function closeLightbox() {
 document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById('image-modal');
   const closeBtn = document.querySelector('.image-modal-close');
-  
+
   if (modal) {
     modal.addEventListener('click', (e) => {
       if (e.target === modal || e.target.classList.contains('image-modal-close')) {
