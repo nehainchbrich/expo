@@ -297,8 +297,7 @@ footer {
   }
 
   .header-logo img {
-    height: 32px;
-    width: auto;
+    height: 34px;
   }
 
   /* Hamburger Animation */
@@ -5115,23 +5114,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .nav-cta {
-    padding: 0.7rem .8rem;
-  }
-
-  .invitation-static-pane,
-  .vip-static-pane {
-    flex: auto;
-  }
-
-  .premium-invitation-section {
-    padding: 3rem 0;
-  }
-
-  .register-cta {
-    margin-top: 1rem;
-  }
-
   .hero-event-info {
     top: auto;
     bottom: 25px;
@@ -5193,12 +5175,6 @@ footer {
     transform: none !important;
     text-align: left;
     width: 90%;
-  }
-
-  .command-center-title span {
-    background: #c99c56;
-    color: #fff;
-
   }
 
   .command-center-title {
