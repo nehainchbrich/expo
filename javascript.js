@@ -890,13 +890,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Auto-slide invitations only
-    setInterval(() => {
-      let next = (invIndex < invSlides.length - 1) ? invIndex + 1 : 0;
-      updateInv(next);
-    }, 12000);
+    // setInterval(() => {
+    //   let next = (invIndex < invSlides.length - 1) ? invIndex + 1 : 0;
+    //   updateInv(next);
+    // }, 12000);
   };
 
-  initIndependentSliders();
+  // initIndependentSliders();
 
   const countdownInterval = setInterval(updateCountdown, 1000);
   updateCountdown(); // Initial call
@@ -904,12 +904,41 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-// --- Lightbox Function ---
+// --- Lightbox Functionality ---
 function openLightbox(src) {
   const modal = document.getElementById('image-modal');
   const img = document.getElementById('lightbox-img');
   if (modal && img) {
     img.src = src;
     modal.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Prevent scroll
   }
 }
+
+// Global close function
+function closeLightbox() {
+  const modal = document.getElementById('image-modal');
+  if (modal) {
+    modal.classList.remove('active');
+    document.body.style.overflow = ''; // Restore scroll
+  }
+}
+
+// Close on background click or close button
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('image-modal');
+  const closeBtn = document.querySelector('.image-modal-close');
+  
+  if (modal) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal || e.target.classList.contains('image-modal-close')) {
+        closeLightbox();
+      }
+    });
+  }
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+  });
+});
