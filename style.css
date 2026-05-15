@@ -4927,7 +4927,7 @@ footer {
   }
 
   .slide-title {
-    font-size: 2.4rem !important;
+    font-size: 2rem !important;
     line-height: 1.1 !important;
   }
 
@@ -5170,7 +5170,7 @@ footer {
 
   .hero-slide-content {
     top: auto !important;
-    bottom: 64% !important;
+    bottom: 66% !important;
     left: 5% !important;
     transform: none !important;
     text-align: left;
@@ -5182,12 +5182,12 @@ footer {
   }
 
   .command-center-title::after {
-    width: 117px;
+    width: 96px;
   }
 
   .hero-slider-nav {
     top: auto !important;
-    bottom: 58% !important;
+    bottom: 61% !important;
     right: 5% !important;
     left: auto !important;
     transform: none !important;
